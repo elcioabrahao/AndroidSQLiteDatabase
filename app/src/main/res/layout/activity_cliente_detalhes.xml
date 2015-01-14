@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+android:paddingBottom="@dimen/activity_vertical_margin"
+tools:context="br.usjt.cursoandroid.androidsqlitedatabase.ClienteDetalhesActivity">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Nome"
+    android:id="@+id/textView"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="30dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="CPF"
+    android:id="@+id/textView2"
+    android:layout_below="@+id/textView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="29dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Tel"
+    android:id="@+id/textView3"
+    android:layout_below="@+id/textView2"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Email"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="29dp" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:id="@+id/editTextName"
+    android:layout_above="@+id/textView2"
+    android:layout_toRightOf="@+id/textView"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="text"
+    android:ems="10"
+    android:id="@+id/editTextCpf"
+    android:layout_above="@+id/textView3"
+    android:layout_toRightOf="@+id/textView"
+    android:layout_alignRight="@+id/editTextName"
+    android:layout_alignEnd="@+id/editTextName" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:ems="10"
+    android:id="@+id/editTextTelefone"
+    android:layout_alignBottom="@+id/textView3"
+    android:layout_alignLeft="@+id/editTextCpf"
+    android:layout_alignStart="@+id/editTextCpf"
+    android:layout_alignRight="@+id/editTextCpf"
+    android:layout_alignEnd="@+id/editTextCpf" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextEmail"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignLeft="@+id/editTextTelefone"
+        android:layout_alignStart="@+id/editTextTelefone"
+        android:layout_alignRight="@+id/editTextTelefone"
+        android:layout_alignEnd="@+id/editTextTelefone" />
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Salvar"
+    android:id="@+id/btnSave"
+    android:layout_alignParentBottom="true"
+    android:layout_toLeftOf="@+id/btnClose" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Fechar"
+    android:id="@+id/btnClose"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Deletar"
+    android:id="@+id/btnDelete"
+    android:layout_alignTop="@+id/btnSave"
+    android:layout_toLeftOf="@+id/btnSave" />
+
+</RelativeLayout>
